@@ -8,11 +8,7 @@ function HomePage() {
     <div className="page">
       <section className="hero-section">
         <p className="eyebrow">Portfolio</p>
-        <h1>Hej, jeg hedder Fredrik Møllenbergg.</h1>
-        <p className="hero-text">
-          Jeg arbejder med frontend, design og digitale produkter. Her samler
-          jeg projekter, proces og det, jeg lærer undervejs.
-        </p>
+        <h1>Fredrik Møllenberg.</h1>
         <div className="actions">
           <Link className="button" to="/projects">
             Se projekter
@@ -26,7 +22,7 @@ function HomePage() {
       <section className="section">
         <div className="section-heading">
           <p className="eyebrow">Udvalgte projekter</p>
-          <h2>Start med få projekter og gør dem stærke.</h2>
+          <h2>Mine 2 nyeste projekter.</h2>
         </div>
 
         <div className="project-grid">
