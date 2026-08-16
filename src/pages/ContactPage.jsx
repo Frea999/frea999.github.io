@@ -4,7 +4,8 @@ function ContactPage() {
       <p className="eyebrow">Kontakt</p>
       <h1>Lad os tale sammen.</h1>
       <p className="lead">
-        Tilpas links og mailadresse, så siden peger på dine egne profiler.
+        Skriv en mail eller find mig på GitHub og LinkedIn — jeg svarer
+        gerne på spørgsmål om projekter og samarbejde.
       </p>
 
       <ul className="contact-list">

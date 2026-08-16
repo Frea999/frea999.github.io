@@ -9,6 +9,10 @@ function HomePage() {
       <section className="hero-section">
         <p className="eyebrow">Portfolio</p>
         <h1>Fredrik Møllenberg.</h1>
+        <p className="hero-text">
+          Multimediedesign-studerende i Aarhus. Jeg arbejder med design og
+          frontend — fra idé og wireframe til færdig kode.
+        </p>
         <div className="actions">
           <Link className="button" to="/projects">
             Se projekter
