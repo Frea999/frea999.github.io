@@ -1,23 +1,34 @@
 function AboutPage() {
-  return (
-    <div className="page narrow">
-      <p className="eyebrow">Om mig</p>
-      <h1>Hvem er jeg?</h1>
-      <p className="lead">
-        Skriv kort om din faglige retning, dine interesser og hvad du gerne vil
-        blive bedre til. Hold teksten konkret og personlig.
-      </p>
+  const base = import.meta.env.BASE_URL;
 
-      <section className="info-list" aria-label="Om mig detaljer">
+  return (
+    <div className="page">
+      <div className="about-layout">
         <div>
-          <h2>Jeg arbejder med</h2>
-          <p>React, HTML, CSS, JavaScript, designproces og digitale produkter.</p>
+          <p className="eyebrow">Om mig</p>
+          <h1>Hvem er jeg?</h1>
+          <p className="lead">
+            Jeg studerer multimediedesign på Aarhus Erhvervsakademi, og jeg
+            har interesse for både design og programmering. Det som jeg godt
+            kan lide ved det jeg laver er, at man får lov til at komme med
+            kreative løsninger, som også kræver en del eftertanke og
+            research.
+          </p>
+          <p className="lead">
+            Jeg arbejder bedst i hold, hvor jeg kan få lov at sparre med en
+            gruppe og diskutere, hvad den bedste løsning på et problem er.
+            Jeg vil rigtig gerne udvikle mig inden for kodning, visuel
+            identitet og at bruge React.
+          </p>
         </div>
-        <div>
-          <h2>Jeg er nysgerrig på</h2>
-          <p>Brugeroplevelser, visuel identitet og hvordan kode bliver til noget brugbart.</p>
+
+        <div className="about-photos">
+          <img src={`${base}mig.jpg`} alt="Fredrik Møllenberg" />
+          <img src={`${base}mig2.jpg`} alt="Fredrik Møllenberg" />
+          <img src={`${base}cat.jpg`} alt="Kat" />
+          <img src={`${base}rolls.jpg`} alt="Rulleskøjter" />
         </div>
-      </section>
+      </div>
     </div>
   );
 }

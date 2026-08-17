@@ -1,17 +1,19 @@
 import { Link } from "react-router";
 import projects from "../data/projects";
+import useReveal from "../hooks/useReveal";
 
 function HomePage() {
   const featuredProjects = projects.slice(0, 2);
+  useReveal(".project-card");
 
   return (
     <div className="page">
       <section className="hero-section">
         <p className="eyebrow">Portfolio</p>
-        <h1>Hej, jeg hedder Fredrik Møllenbergg.</h1>
+        <h1>Fredrik Møllenberg.</h1>
         <p className="hero-text">
-          Jeg arbejder med frontend, design og digitale produkter. Her samler
-          jeg projekter, proces og det, jeg lærer undervejs.
+          Multimediedesign studerende i Aarhus. Jeg arbejder med design og
+          frontend, fra ide og wireframe til færdig kode.
         </p>
         <div className="actions">
           <Link className="button" to="/projects">
@@ -26,7 +28,7 @@ function HomePage() {
       <section className="section">
         <div className="section-heading">
           <p className="eyebrow">Udvalgte projekter</p>
-          <h2>Start med få projekter og gør dem stærke.</h2>
+          <h2>Mine 2 nyeste projekter.</h2>
         </div>
 
         <div className="project-grid">
@@ -35,9 +37,10 @@ function HomePage() {
               <img src={project.image} alt={`Preview af ${project.title}`} />
               <div className="project-card-content">
                 <p className="eyebrow">{project.year}</p>
-                <h3>{project.title}</h3>
+                <h3>
+                  <Link to={`/projects/${project.slug}`}>{project.title}</Link>
+                </h3>
                 <p>{project.summary}</p>
-                <Link to={`/projects/${project.slug}`}>Læs mere</Link>
               </div>
             </article>
           ))}
