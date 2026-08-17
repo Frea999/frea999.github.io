@@ -4,7 +4,10 @@ function Navbar() {
   return (
     <header className="site-header">
       <NavLink className="brand" to="/">
-        Fredrik Møllenberg
+        <img
+          src={`${import.meta.env.BASE_URL}logo.svg`}
+          alt="Fredrik Møllenberg"
+        />
       </NavLink>
 
       <nav className="site-nav" aria-label="Primær navigation">

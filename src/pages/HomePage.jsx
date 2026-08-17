@@ -1,8 +1,10 @@
 import { Link } from "react-router";
 import projects from "../data/projects";
+import useReveal from "../hooks/useReveal";
 
 function HomePage() {
   const featuredProjects = projects.slice(0, 2);
+  useReveal(".project-card");
 
   return (
     <div className="page">
@@ -10,8 +12,8 @@ function HomePage() {
         <p className="eyebrow">Portfolio</p>
         <h1>Fredrik Møllenberg.</h1>
         <p className="hero-text">
-          Multimediedesign-studerende i Aarhus. Jeg arbejder med design og
-          frontend — fra idé og wireframe til færdig kode.
+          Multimediedesign studerende i Aarhus. Jeg arbejder med design og
+          frontend, fra ide og wireframe til færdig kode.
         </p>
         <div className="actions">
           <Link className="button" to="/projects">
@@ -35,9 +37,10 @@ function HomePage() {
               <img src={project.image} alt={`Preview af ${project.title}`} />
               <div className="project-card-content">
                 <p className="eyebrow">{project.year}</p>
-                <h3>{project.title}</h3>
+                <h3>
+                  <Link to={`/projects/${project.slug}`}>{project.title}</Link>
+                </h3>
                 <p>{project.summary}</p>
-                <Link to={`/projects/${project.slug}`}>Læs mere</Link>
               </div>
             </article>
           ))}
