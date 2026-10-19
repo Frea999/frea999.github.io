@@ -45,11 +45,11 @@ const projects = [
     title: "Mellemrun - Code optimization",
     year: "2026",
     summary:
-      "En webshop til handel af tøj og accessories, med fokus på inklusion og diversitet",
+      "Case lavet med fokus på af kode. Projektet er lavet i React.",
     description:
       "En webshop til handel af tøj og accessories, med fokus på inklusion og diversitet. I projektet er der arbejdet med design, frontend og proces. Projektet er lavet i Figma og React.",
-    tags: ["Design", "Frontend", "Proces"],
-    image: `${import.meta.env.BASE_URL}webshop-billede.png`,
+    tags: ["Code", "Frontend", "React"],
+    image: `${import.meta.env.BASE_URL}mellemrum-case1.png`,
     links: [
       {
         label: "github repo",
@@ -66,11 +66,11 @@ const projects = [
     title: "Vuuh - Onboarding",
     year: "2026",
     summary:
-      "En webshop til handel af tøj og accessories, med fokus på inklusion og diversitet",
+      "Et projekt med fokus på at optimere onboarding processen for brugere. Projektet er lavet i Figma.",
     description:
       "En webshop til handel af tøj og accessories, med fokus på inklusion og diversitet. I projektet er der arbejdet med design, frontend og proces. Projektet er lavet i Figma og React.",
-    tags: ["Design", "Frontend", "Proces"],
-    image: `${import.meta.env.BASE_URL}webshop-billede.png`,
+    tags: ["Design", "User flow", "Onboarding"],
+    image: `${import.meta.env.BASE_URL}vuuh-onboarding.png`,
     links: [
       {
         label: "UX Audit",
@@ -87,14 +87,14 @@ const projects = [
     title: "La rouge heritage - design",
     year: "2026",
     summary:
-      "En webshop til handel af tøj og accessories, med fokus på inklusion og diversitet",
+      "Et designprojekt for at skabe en stærkere brandidentitet. Arbejdet med designsystem og branding. ",
     description:
       "En webshop til handel af tøj og accessories, med fokus på inklusion og diversitet. I projektet er der arbejdet med design, frontend og proces. Projektet er lavet i Figma og React.",
-    tags: ["Design", "Frontend", "Proces"],
-    image: `${import.meta.env.BASE_URL}webshop-billede.png`,
+    tags: ["Design", "Designsystem", "Branding"],
+    image: `${import.meta.env.BASE_URL}la-rouge-billede.png`,
     links: [
       {
-        label: "Brand dec",
+        label: "Brand deck",
         href: "https://www.figma.com/design/2bQlhqwMLnF2UnpVcmpyxg/La-Rouge-Heritage?node-id=211-1206&t=W284wiHU2TffaWoB-1",
       },
       {
