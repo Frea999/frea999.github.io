@@ -41,7 +41,7 @@ const projects = [
     ],
   },
    {
-    slug: "mellemrun - Code optimization",
+    slug: "mellemrum",
     title: "Mellemrun - Code optimization",
     year: "2026",
     summary:
@@ -62,7 +62,7 @@ const projects = [
     ],
   },
      {
-    slug: "Vuuh - Onboarding",
+    slug: "vuuh",
     title: "Vuuh - Onboarding",
     year: "2026",
     summary:
@@ -83,7 +83,7 @@ const projects = [
     ],
   },
        {
-    slug: "La rouge heritage - design",
+    slug: "larouge",
     title: "La rouge heritage - design",
     year: "2026",
     summary:
