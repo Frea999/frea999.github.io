@@ -40,6 +40,70 @@ const projects = [
       },
     ],
   },
+   {
+    slug: "mellemrun - Code optimization",
+    title: "Mellemrun - Code optimization",
+    year: "2026",
+    summary:
+      "En webshop til handel af tøj og accessories, med fokus på inklusion og diversitet",
+    description:
+      "En webshop til handel af tøj og accessories, med fokus på inklusion og diversitet. I projektet er der arbejdet med design, frontend og proces. Projektet er lavet i Figma og React.",
+    tags: ["Design", "Frontend", "Proces"],
+    image: `${import.meta.env.BASE_URL}webshop-billede.png`,
+    links: [
+      {
+        label: "github repo",
+        href: "https://github.com/Frea999/mellemrum-case1",
+      },
+      {
+        label: "live site",
+        href: "https://frea999.github.io/mellemrum-case1/",
+      },
+    ],
+  },
+     {
+    slug: "Vuuh - Onboarding",
+    title: "Vuuh - Onboarding",
+    year: "2026",
+    summary:
+      "En webshop til handel af tøj og accessories, med fokus på inklusion og diversitet",
+    description:
+      "En webshop til handel af tøj og accessories, med fokus på inklusion og diversitet. I projektet er der arbejdet med design, frontend og proces. Projektet er lavet i Figma og React.",
+    tags: ["Design", "Frontend", "Proces"],
+    image: `${import.meta.env.BASE_URL}webshop-billede.png`,
+    links: [
+      {
+        label: "UX Audit",
+        href: "https://www.figma.com/design/gyLtcPLHRLcjOeT8V9AzDI/vuuh---designfil?node-id=71-21&t=a7w9I3T3DnUZz8Iq-1",
+      },
+      {
+        label: "Figma prototype",
+        href: "https://www.figma.com/proto/gyLtcPLHRLcjOeT8V9AzDI/vuuh---designfil?node-id=107-26&viewport=476%2C275%2C0.05&t=ccZpOGzkDKXEOnUL-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=107%3A26&page-id=87%3A21",
+      },
+    ],
+  },
+       {
+    slug: "La rouge heritage - design",
+    title: "La rouge heritage - design",
+    year: "2026",
+    summary:
+      "En webshop til handel af tøj og accessories, med fokus på inklusion og diversitet",
+    description:
+      "En webshop til handel af tøj og accessories, med fokus på inklusion og diversitet. I projektet er der arbejdet med design, frontend og proces. Projektet er lavet i Figma og React.",
+    tags: ["Design", "Frontend", "Proces"],
+    image: `${import.meta.env.BASE_URL}webshop-billede.png`,
+    links: [
+      {
+        label: "Brand dec",
+        href: "https://www.figma.com/design/2bQlhqwMLnF2UnpVcmpyxg/La-Rouge-Heritage?node-id=211-1206&t=W284wiHU2TffaWoB-1",
+      },
+      {
+        label: "Figma prototype",
+        href: "https://www.figma.com/proto/2bQlhqwMLnF2UnpVcmpyxg/La-Rouge-Heritage?node-id=195-204&viewport=574%2C347%2C0.18&t=bo0bGP7MVfrqXtMA-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=195%3A204&page-id=195%3A203",
+      },
+    ],
+  },
 ];
+
 
 export default projects;
