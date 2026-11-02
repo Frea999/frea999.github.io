@@ -19,7 +19,7 @@ function ProjectPage() {
   }
 
   return (
-    <article className="page narrow">
+    <article className={project.sections ? "page case-page" : "page narrow"}>
       <Link className="back-link" to="/projects">
         Tilbage til projekter
       </Link>
@@ -27,13 +27,37 @@ function ProjectPage() {
       <img className="detail-image" src={project.image} alt="" />
       <p className="eyebrow">{project.year}</p>
       <h1>{project.title}</h1>
-      <p className="lead">{project.description}</p>
+      {project.description && <p className="lead">{project.description}</p>}
 
       <ul className="tag-list">
         {project.tags.map((tag) => (
           <li key={tag}>{tag}</li>
         ))}
       </ul>
+
+      {project.sections?.map((section) => (
+        <section
+          className={section.image ? "case-section" : "case-section no-image"}
+          key={section.heading}
+        >
+          <div>
+            <h2>{section.heading}</h2>
+            <p className="case-text">{section.text}</p>
+          </div>
+          {section.image && (
+            <img
+              src={section.image}
+              alt=""
+              style={
+                section.imageBackground && {
+                  background: section.imageBackground,
+                  padding: "2rem",
+                }
+              }
+            />
+          )}
+        </section>
+      ))}
 
       <div className="actions">
         {project.links.map((link) => (

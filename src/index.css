@@ -120,6 +120,10 @@ textarea {
   width: min(100% - 2.5rem, var(--content-narrow));
 }
 
+.case-page {
+  width: min(100% - 2rem, 1000px);
+}
+
 .hero-section {
   display: grid;
   gap: 1.25rem;
@@ -418,6 +422,44 @@ p {
   border-radius: 0.375rem;
   object-fit: cover;
   margin-bottom: 2.5rem;
+}
+
+.case-section {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 2rem;
+  align-items: start;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.case-section + .actions {
+  margin-top: 3rem;
+}
+
+.case-text {
+  white-space: pre-line;
+}
+
+.case-section.no-image {
+  grid-template-columns: 1fr;
+}
+
+.case-section img {
+  display: block;
+  justify-self: center;
+  width: auto;
+  max-width: 100%;
+  max-height: 640px;
+  border: 1px solid var(--border);
+  border-radius: 0.375rem;
+}
+
+@media (max-width: 720px) {
+  .case-section {
+    grid-template-columns: 1fr;
+  }
 }
 
 .back-link {
